@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- ======================
+       MOBILE ONLY
+       ======================= -->
+  <div class="mobile-only">
+    <div class="mobile-content">
+      <p class="mobile-block">
+        OUPS, LA VERSION MOBILE<br>
+        N’EST PAS ENCORE PRÊTE.<br>
+        LE SITE EST À DÉCOUVRIR<br>
+        SUR ORDINATEUR.
+      </p>
+
+      <div class="mobile-mark" aria-hidden="true">
+        <img src="./assets/MOTIF NOIR.png" alt="">
+      </div>
+
+      <p class="mobile-block">
+        POUR TOUTE DEMANDE,<br>
+        CONTACTER<br>
+        <a class="mobile-link" href="mailto:poireau.hortense@gmail.com">POIREAU.HORTENSE@GMAIL.COM</a>
+      </p>
+    </div>
+
+    <!-- bandeau logo qui défile en bas -->
+    <div class="mobile-logoLoop" aria-hidden="true">
+      <div class="mobile-logoTrack">
+        <div class="mobile-logoRow">
+          <img src="./assets/LOGO.svg" alt="">
+          <img src="./assets/LOGO.svg" alt="">
+          <img src="./assets/LOGO.svg" alt="">
+          <img src="./assets/LOGO.svg" alt="">
+        </div>
+
+        <!-- duplication pour boucle parfaite -->
+        <div class="mobile-logoRow" aria-hidden="true">
+          <img src="./assets/LOGO.svg" alt="">
+          <img src="./assets/LOGO.svg" alt="">
+          <img src="./assets/LOGO.svg" alt="">
+          <img src="./assets/LOGO.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================
+       DESKTOP NORMAL
+       ======================= -->
+  <header class="topbar">
+    <div class="tl">
+      <img class="logo" src="./assets/LOGO.svg" alt="Logo">
+    </div>
+
+    <div></div>
+
+    <div class="tr">
+      <button class="topLink" id="openTopRefs" type="button">INDEX</button>
+    </div>
+  </header>
+
+  <main class="home">
+    <div class="loop" id="loop">
+      <div class="track" id="track"></div>
+    </div>
+  </main>
+
+  <section class="infoBar" aria-label="Informations">
+    <div class="infoCol infoLeft" id="infoLeft"></div>
+
+    <div class="infoCenter">
+      <div class="infoCol infoMid" id="infoMid"></div>
+      <div class="infoCol infoRight" id="infoRight"></div>
+    </div>
+
+    <div class="infoCol infoRefs">
+      <button class="infoBtn" id="openBottomBand" type="button">RÉFÉRENCES</button>
+    </div>
+  </section>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawerClose" id="closeTopRefs" aria-label="Fermer">
+      <img src="./assets/CROIX BLANCHE.svg" alt="">
+    </button>
+
+    <div class="drawerInner">
+      <div class="drawerTitle">PROJETS</div>
+      <div class="drawerList" id="drawerList"></div>
+    </div>
+  </aside>
+
+  <aside class="bottomBand" id="bottomBand" aria-hidden="true">
+    <button class="bandClose" id="closeBottomBand" aria-label="Fermer">
+      <img src="./assets/CROIX BLANCHE.svg" alt="">
+    </button>
+
+    <div class="bandInner">
+      <div class="bandCol bandTitle">EXPERIENCES</div>
+      <div class="bandCol bandBody" id="bandExp"></div>
+
+      <div class="bandCol bandTitle">FREELANCE</div>
+      <div class="bandCol bandBody" id="bandFree"></div>
+
+      <div class="bandCol bandTitle">FORMATIONS</div>
+      <div class="bandCol bandBody" id="bandEdu"></div>
+    </div>
+  </aside>
+
+  <aside class="project" id="project" aria-hidden="true">
+    <button class="projClose" id="closeProject" aria-label="Fermer">
+      <img src="./assets/CROIX NOIRE.svg" alt="">
+    </button>
+
+    <div class="projectScroll" id="projectScroll">
+      <div class="projectInner" id="projectInner"></div>
+    </div>
+  </aside>
+
+  <script src="./app.js"></script>
+</body>
+</html>
